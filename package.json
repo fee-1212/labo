@@ -1,0 +1,23 @@
+{
+  "name": "labo",
+  "version": "1.0.0",
+  "description": "labo fee",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fee-1212/labo.git"
+  },
+  "keywords": [
+    "labo",
+    "fee"
+  ],
+  "author": "tchen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fee-1212/labo/issues"
+  },
+  "homepage": "https://github.com/fee-1212/labo#readme"
+}
