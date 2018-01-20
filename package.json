@@ -4,7 +4,8 @@
   "description": "labo fee",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "watch-js": "nodemon -e js --ignore js/dist/ -x \" npm run test \""
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,20 @@
   "bugs": {
     "url": "https://github.com/fee-1212/labo/issues"
   },
-  "homepage": "https://github.com/fee-1212/labo#readme"
+  "homepage": "https://github.com/fee-1212/labo#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-env": "^7.0.0-beta.38",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-qunit": "^1.2.1",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.11",
+    "popper.js": "^1.12.9",
+    "qunitjs": "^2.4.1",
+    "rollup": "^0.54.1",
+    "rollup-plugin-babel": "^4.0.0-beta.0",
+    "rollup-plugin-node-resolve": "^3.0.2"
+  }
 }
