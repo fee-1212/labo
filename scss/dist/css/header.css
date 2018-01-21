@@ -1,0 +1,25 @@
+.bee-header {
+  height: 50px;
+  background: cornflowerblue;
+}
+
+.bee-header .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.bee-header .logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.bee-header .headerText {
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=header.css.map */

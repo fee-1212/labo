@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Header Test</title>
+    <script src="../../node_modules/jquery/jquery.js"></script>
+    <script src="../../js/dist/header.js"></script>
+    <link rel="stylesheet" href="../../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../../scss/dist/css/header.css">
+</head>
+<body>
+    <div id="myHeader"></div>
+</body>
+    <script>
+        $(function(){
+            $("#myHeader").beeHeader({
+                "logo":"logo.jpg",
+                "text":"docker"
+            });
+        })
+    </script>
+</html>

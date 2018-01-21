@@ -1,0 +1,12 @@
+{
+  "presets": [
+    ["@babel/env", {
+      "modules": false,
+      "loose": true
+    }]
+  ],
+  "plugins": [
+    "@babel/proposal-object-rest-spread",
+    "transform-es2015-modules-strip"
+  ]
+}

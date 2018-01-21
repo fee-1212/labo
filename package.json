@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "npm test",
-    "watch-js": "nodemon -e js --ignore js/dist/ -x \" npm run test \""
+    "js-compile-plugins": "cross-env babel js/src/ --out-dir js/dist/ --source-maps",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6  scss/src/header.scss  scss/dist/css/header.css",
+    "watch-css": "nodemon -e scss --ignore scss/dist/ -x \" npm run css-compile \"",
+    "watch-js": "nodemon -e js --ignore js/dist/ -x \" npm run js-compile-plugins \"",
+    "watch": "npm-run-all --parallel watch-css watch-js"
   },
   "repository": {
     "type": "git",
@@ -23,17 +27,26 @@
   "homepage": "https://github.com/fee-1212/labo#readme",
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.38",
     "@babel/core": "^7.0.0-beta.38",
     "@babel/preset-env": "^7.0.0-beta.38",
+    "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
+    "cross-env": "^5.1.3",
+    "jquery": "1.9.1",
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-qunit": "^1.2.1",
     "node-sass": "^4.7.2",
     "nodemon": "^1.14.11",
+    "normalize.css": "^7.0.0",
+    "npm-run-all": "^4.1.2",
     "popper.js": "^1.12.9",
     "qunitjs": "^2.4.1",
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^4.0.0-beta.0",
     "rollup-plugin-node-resolve": "^3.0.2"
+  },
+  "peerDependencies": {
+    "jquery": "1.9.1 - 3"
   }
 }

@@ -1,0 +1,21 @@
+$height : 50px;
+.bee-header{
+  height: $height;
+  background: cornflowerblue;
+  .helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .logo{
+    width: $height * 0.8;
+    height: $height * 0.8;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  .headerText{
+    height: $height * 0.8;
+    line-height: $height * 0.8;
+    margin-left: 10px;
+  }
+}
