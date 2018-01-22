@@ -7,7 +7,7 @@
     "test": "npm test",
     "js-compile-plugins": "cross-env babel js/src/ --out-dir js/dist/ --source-maps",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6  scss/src/header.scss  scss/dist/css/header.css",
-    "css-lint":"stylelint --syntax scss \"scss/**/*.scss\"",
+    "css-lint": "stylelint --syntax scss \"scss/**/*.scss\"",
     "watch-css": "nodemon -e scss --ignore scss/dist/ -x \" npm run css-compile \"",
     "watch-js": "nodemon -e js --ignore js/dist/ -x \" npm run js-compile-plugins \"",
     "watch": "npm-run-all --parallel watch-css watch-js"
@@ -46,7 +46,8 @@
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^4.0.0-beta.0",
     "rollup-plugin-node-resolve": "^3.0.2",
-    "stylelint": "^8.4.0"
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0"
   },
   "peerDependencies": {
     "jquery": "1.9.1 - 3"
